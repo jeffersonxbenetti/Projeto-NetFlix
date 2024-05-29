@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+#container {
+    background: url("./img/background.jpg");
+    padding-bottom: 140px;
+}
+
+#img-logo {
+    width: 150px;
+}
+
+.bnt {
+    background: #e50914;
+    font-size: 16px;
+    padding: 8px 18px 8px;
+    border: none;
+    border-radius: 3px;
+    float: right;
+    cursor: pointer;
+}
+
+#cabecalho {
+    padding: 28px 56px;
+}
+
+h1 {
+    font-size: 64px;
+    text-align: center;
+    width: 700px;
+    margin: 100px auto 0;
+}
+
+#paragrafo-assista {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 14px;
+}
+
+#paragrafo-pronto {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 14px;
+}
+
+#formulario {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    height: 60px;
+}
+
+input {
+    width: 500px;
+    padding-left: 10px;
+}
+
+#botao-email {
+    width: 250px;
+    background-color: #e50914;
+    border: 0;
+    font-size: 24px;
+}

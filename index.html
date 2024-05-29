@@ -4,37 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
     <title>Projeto - Devclub - Netflix</title>
 </head>
 
 <body>
 
-    <div>
-        <img src="./img/logo-netflix.svg" alt="logo-netflix">
-        <button>Entrar</button>
-    </div>
+    <div id="container">
+        <div id="cabecalho">
+            <img id="img-logo" src="./img/logo-netflix.svg" alt="logo-netflix">
+            <button class="bnt">Entrar</button>
+        </div>
 
-    <div>
-        <h1>Filmes, séries e muito mais, sem limites.</h1>
-        <p>Assista onde quiser. Cancele quando quiser.</p>
-        <p>Quer assistir? Informe seu email para criar ou reiniciar sua assinatura.</p>
+        <div>
+            <h1>Filmes, séries e muito mais, sem limites.</h1>
+            <p id="paragrafo-assista">Assista onde quiser. Cancele quando quiser.</p>
+            <p id="paragrafo-pronto">Quer assistir? Informe seu email para criar ou reiniciar sua assinatura.</p>
 
-        
-        <input type="email" placeholder="Email">
-        <button>Vamos lá <img src="./img/img-seta.jpg" alt="imagem de uma seta"></button>
-        
+            <div id="formulario">
+                <input type="email" placeholder="Email">
+                <button id="botao-email">Vamos lá <img src="./img/img-seta.jpg" alt="imagem de uma seta"></button>
+            </div>
+        </div>
     </div>
 
     <div>
         <h2>Perguntas frequentes</h2>
-        
+
         <div>
             <button>O que é a Netflix? <img src="./img/img-fechar.jpg" alt="imagem de sinal de fechar."></button>
 
             <div>
-            <p>A Netflix é um serviço de streaming que oferece uma ampla variedade de séries, filmes e documentários premiados em milhares de aparelhos conectados à internet.</p>
+                <p>A Netflix é um serviço de streaming que oferece uma ampla variedade de séries, filmes e documentários
+                    premiados em milhares de aparelhos conectados à internet.</p>
 
-            <p>Você pode assistir a quantos filmes e séries quiser, quando e onde quiser – tudo por um preço mensal acessível. Aqui você sempre encontra novidades. A cada semana, adicionamos novas séries e filmes.</p>
+                <p>Você pode assistir a quantos filmes e séries quiser, quando e onde quiser – tudo por um preço mensal
+                    acessível. Aqui você sempre encontra novidades. A cada semana, adicionamos novas séries e filmes.
+                </p>
             </div>
         </div>
     </div>
