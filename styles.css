@@ -7,8 +7,8 @@
 }
 
 #container {
-    background: url("./img/background.jpg");
-    padding-bottom: 140px;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0.8) 100%), url("./img/background.jpg");
+    padding-bottom: 130px;
 }
 
 #img-logo {
@@ -33,7 +33,9 @@ h1 {
     font-size: 64px;
     text-align: center;
     width: 700px;
-    margin: 100px auto 0;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #paragrafo-assista {
@@ -53,16 +55,72 @@ h1 {
     justify-content: center;
     margin-top: 20px;
     height: 60px;
+    gap: 10px;
 }
 
 input {
     width: 500px;
     padding-left: 10px;
+    background: rgba(48, 48, 48, 0.5);
+    outline: none;
+    border: 2px solid #857575;
+    border-radius: 3px;
 }
 
 #botao-email {
     width: 250px;
     background-color: #e50914;
     border: 0;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+#rodape {
+    background: black;
+    border-top: 4px solid #303030;
+    padding: 70px 0;
+    height: 100vh;
+}
+
+h2 {
+    font-size: 50px;
+    text-align: center;
+}
+
+#botao-pergunta {
+    width: 800px;
+    background: #303030;
+    height: 70px;
+    border: 0;
+    font-size: 24px;
+    margin-top: 40px;
+    text-align: left;
+    padding: 0 24px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block; 
+}
+
+#img-pergunta {
+    float: right;
+}
+
+#img-pergunta-girar {
+    float: right;
+    transform: rotate(45deg);
+}
+
+#pergunta {
+    width: 800px;
+    background: #303030;
+    margin-top: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 24px;
+    display: none;
+}
+
+.paragrafo-pergunta {
     font-size: 24px;
 }
