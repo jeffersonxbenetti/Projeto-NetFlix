@@ -23,27 +23,44 @@
 
             <div id="formulario">
                 <input type="email" placeholder="Email">
-                <button id="botao-email">Vamos lá <img src="./img/img-seta.jpg" alt="imagem de uma seta"></button>
+                <button id="botao-email">Vamos lá <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="24" height="24" viewBox="0 0 24 24" role="img" data-icon="ChevronRightStandard" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.5859 12L8.29303 19.2928L9.70725 20.7071L17.7072 12.7071C17.8948 12.5195 18.0001 12.2652 18.0001 12C18.0001 11.7347 17.8948 11.4804 17.7072 11.2928L9.70724 3.29285L8.29303 4.70706L15.5859 12Z" fill="currentColor"></path></svg></button>
             </div>
         </div>
     </div>
 
-    <div>
+    <div id="rodape">
         <h2>Perguntas frequentes</h2>
+        <button id="botao-pergunta">O que é a Netflix ?<svg id="img-pergunta" xmlns="http://www.w3.org/2000/svg" fill="none" width="24" height="24" viewBox="0 0 24 24" role="img" data-icon="PlusStandard" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M11 11V2H13V11H22V13H13V22H11V13H2V11H11Z" fill="currentColor"></path></svg></button>
 
-        <div>
-            <button>O que é a Netflix? <img src="./img/img-fechar.jpg" alt="imagem de sinal de fechar."></button>
-
-            <div>
-                <p>A Netflix é um serviço de streaming que oferece uma ampla variedade de séries, filmes e documentários
-                    premiados em milhares de aparelhos conectados à internet.</p>
-
-                <p>Você pode assistir a quantos filmes e séries quiser, quando e onde quiser – tudo por um preço mensal
-                    acessível. Aqui você sempre encontra novidades. A cada semana, adicionamos novas séries e filmes.
-                </p>
-            </div>
+        <div id="pergunta">
+            <p class="paragrafo-pergunta">A Netflix é um serviço de streaming que oferece uma ampla variedade de séries, filmes e documentários
+                premiados em milhares de aparelhos conectados à internet.</p>
+            <br>
+            <p class="paragrafo-pergunta">Você pode assistir a quantos filmes e séries quiser, quando e onde quiser – tudo por um preço mensal
+                acessível. Aqui você sempre encontra novidades. A cada semana, adicionamos novas séries e filmes.
+            </p>
         </div>
     </div>
 </body>
+<script>
+    let botao = document.getElementById("botao-pergunta")
+    let menu = document.getElementById("pergunta")
+    let svg = document.getElementById("img-pergunta")
 
+    console.log(botao);
+    console.log(menu);
+
+    function botaoClicado(){
+        if( menu.style.display == "none"){
+            menu.style.display = "block" 
+            svg.id = "img-pergunta-girar"
+        } else {
+            menu.style.display = "none"
+            svg.id = "img-pergunta"
+        }        
+    }
+
+    botao.addEventListener("click", botaoClicado)
+
+</script>
 </html>
